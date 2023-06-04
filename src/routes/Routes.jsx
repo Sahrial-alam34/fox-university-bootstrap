@@ -6,6 +6,7 @@ import Home from "../pages/Home/Home/Home";
 import About from "../pages/About/About";
 
 import CoursesPage from "../pages/CoursesPage/CoursesPage";
+import StaffPage from "../pages/StaffPage/StaffPage";
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
           path:'/courses',
           element:<CoursesPage></CoursesPage>,
           loader:()=>fetch('/courses.json')
+        },
+        {
+          path: '/staff',
+          element:<StaffPage></StaffPage>
         }
       ]
     },

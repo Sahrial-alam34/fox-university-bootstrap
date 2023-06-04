@@ -91,6 +91,14 @@ const Header = () => {
                                 </Nav.Link>
                                 <Nav.Link
                                     as={Link}
+                                    to="/staff"
+                                    onClick={() => handleNavLinkClick('staff')}
+                                    className={`text-warning mt-2 p-2 text-decoration-none ${activeLink === 'staff' ? 'text-white' : ''}`}
+                                >
+                                    Staff
+                                </Nav.Link>
+                                <Nav.Link
+                                    as={Link}
                                     to="/contact"
                                     onClick={() => handleNavLinkClick('contact')}
                                     className={`text-warning mt-2 p-2 text-decoration-none ${activeLink === 'contact' ? 'text-white' : ''}`}
