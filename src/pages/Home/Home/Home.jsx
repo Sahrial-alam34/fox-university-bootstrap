@@ -4,6 +4,10 @@ import Intro from "../Intro/Intro";
 import Cover from "../Cover/Cover";
 import Offer from "../Offer/Offer";
 import Courses from "../Courses/Courses";
+import Certified from "../Certified/Certified";
+import AboutUs from "../AboutUs/AboutUs";
+import Summary from "../Summary/Summary";
+import Blog from "../Blog/Blog";
 
 const Home = () => {
     return (
@@ -16,6 +20,10 @@ const Home = () => {
             <Offer></Offer>
             <Cover></Cover>
             <Courses></Courses>
+            <Certified></Certified>
+            <Blog></Blog>
+            <AboutUs></AboutUs>
+            <Summary></Summary>
         </div>
     );
 };

@@ -67,8 +67,8 @@ const Header = () => {
                                 <Nav.Link
                                     as={Link}
                                     to="/"
-                                    onClick={() => handleNavLinkClick('home')}
-                                    className={`text-warning mt-2 p-2 text-decoration-none ${activeLink === 'home' ? 'text-white' : ''}`}
+                                    onClick={() => handleNavLinkClick('n')}
+                                    className={`text-warning mt-2 p-2 text-decoration-none ${activeLink === '' ? 'text-white' : ''}`}
                                 >
                                     Home
                                 </Nav.Link>
