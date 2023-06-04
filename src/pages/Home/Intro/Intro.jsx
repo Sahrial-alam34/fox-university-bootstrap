@@ -6,7 +6,7 @@ import img4 from '../../../assets/images/intro/certificate.png'
 const Intro = () => {
     return (
         <div className='d-flex '>
-            <Card className='bg-warning text-white p-5'>
+            <Card className='bg-warning text-white p-5 border rounded-0'>
                 <div className='h-50 mx-auto'>
                     <Card.Img style={{ width: '100px' }} className='text-white ' variant="top" src={img1} />
                 </div>
@@ -19,12 +19,12 @@ const Intro = () => {
 
                 </Card.Body>
             </Card>
-            <Card className='bg-black text-white p-5'>
+            <Card className='bg-black text-white p-5 border rounded-0'>
                 <div className='h-50 mx-auto'>
                     <Card.Img style={{ width: '100px' }} className='text-white ' variant="top" src={img2} />
                 </div>
 
-                <Card.Body className='text-center'>
+                <Card.Body className='text-center '>
                     <Card.Title>Certified Teachers</Card.Title>
                     <Card.Text>
                         Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
@@ -32,7 +32,7 @@ const Intro = () => {
 
                 </Card.Body>
             </Card>
-            <Card className='bg-warning text-white p-5'>
+            <Card className='bg-warning text-white p-5 border rounded-0'>
                 <div className='h-50 mx-auto'>
                     <Card.Img style={{ width: '100px' }} className='text-white ' variant="top" src={img3} />
                 </div>
@@ -45,7 +45,7 @@ const Intro = () => {
 
                 </Card.Body>
             </Card>
-            <Card className='bg-black text-white p-5'>
+            <Card className='bg-black text-white p-5 border rounded-0'>
                 <div className='h-50 mx-auto'>
                     <Card.Img style={{ width: '100px' }} className='text-white ' variant="top" src={img4} />
                 </div>
