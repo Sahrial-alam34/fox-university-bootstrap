@@ -8,6 +8,7 @@ import Certified from "../Certified/Certified";
 import AboutUs from "../AboutUs/AboutUs";
 import Summary from "../Summary/Summary";
 import Blog from "../Blog/Blog";
+import Quote from "../Quote/Quote";
 
 const Home = () => {
     return (
@@ -22,6 +23,7 @@ const Home = () => {
             <Courses></Courses>
             <Certified></Certified>
             <Blog></Blog>
+            <Quote></Quote>
             <AboutUs></AboutUs>
             <Summary></Summary>
         </div>

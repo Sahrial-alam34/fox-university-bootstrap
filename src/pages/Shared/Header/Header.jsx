@@ -78,7 +78,7 @@ const Header = () => {
                                     onClick={() => handleNavLinkClick('about')}
                                     className={`text-warning mt-2 p-2 text-decoration-none ${activeLink === 'about' ? 'text-white' : ''}`}
                                 >
-                                    Blog
+                                    About
                                 </Nav.Link>
                                 <Nav.Link
                                     as={Link}
