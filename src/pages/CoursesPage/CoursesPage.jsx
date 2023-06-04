@@ -14,7 +14,7 @@ const CoursesPage = () => {
             <Helmet>
                 <title>Fox | Courses</title>
             </Helmet>
-            <CoverPage title="Courses" link="Courses"></CoverPage>
+            <CoverPage title="Courses" link="courses"></CoverPage>
             <div className="row mt-5 ms-3">
                 {
                     courseDetails.map(course =>

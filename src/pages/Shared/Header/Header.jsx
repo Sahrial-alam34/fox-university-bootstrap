@@ -99,6 +99,14 @@ const Header = () => {
                                 </Nav.Link>
                                 <Nav.Link
                                     as={Link}
+                                    to="/blog"
+                                    onClick={() => handleNavLinkClick('blog')}
+                                    className={`text-warning mt-2 p-2 text-decoration-none ${activeLink === 'blog' ? 'text-white' : ''}`}
+                                >
+                                    Blog
+                                </Nav.Link>
+                                <Nav.Link
+                                    as={Link}
                                     to="/contact"
                                     onClick={() => handleNavLinkClick('contact')}
                                     className={`text-warning mt-2 p-2 text-decoration-none ${activeLink === 'contact' ? 'text-white' : ''}`}
