@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import CoverPage from "../Shared/CoverPage/CoverPage";
 
 
 const About = () => {
@@ -7,7 +8,8 @@ const About = () => {
                   <Helmet>
                 <title>Fox | About</title>
             </Helmet>
-            <h2>About section</h2>
+            <CoverPage title="About Us" link="About"></CoverPage>
+            
         </div>
     );
 };
