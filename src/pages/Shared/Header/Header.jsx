@@ -6,7 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { MdCall, MdSearch } from 'react-icons/md';
 import { SiMinutemailer } from "react-icons/si";
-import { NavLink } from 'react-router-dom';
+
 import { Link } from 'react-router-dom';
 const Header = () => {
     const [isHovered, setIsHovered] = useState(false);
