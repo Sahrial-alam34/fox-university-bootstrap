@@ -5,6 +5,8 @@ import Main from "../layout/Main";
 import Home from "../pages/Home/Home/Home";
 import About from "../pages/About/About";
 
+import CoursesPage from "../pages/CoursesPage/CoursesPage";
+
 const router = createBrowserRouter([
     {
       path: "/",
@@ -12,11 +14,18 @@ const router = createBrowserRouter([
       children:[
         {
             path: '/',
-            element:<Home></Home>
+            element:<Home></Home>,
+            loader:()=>fetch('/courses.json'),
+            
         },
         {
           path:'/about',
           element:<About></About>
+        },
+        {
+          path:'/courses',
+          element:<CoursesPage></CoursesPage>,
+          loader:()=>fetch('/courses.json')
         }
       ]
     },

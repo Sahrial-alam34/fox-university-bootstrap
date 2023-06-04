@@ -9,8 +9,9 @@ import { SiMinutemailer } from "react-icons/si";
 
 import { Link } from 'react-router-dom';
 const Header = () => {
-    const [isHovered, setIsHovered] = useState(false);
+    
     const [activeLink, setActiveLink] = useState('');
+    const [isHovered, setIsHovered] = useState(false);
     const handleHover = () => {
         setIsHovered(!isHovered);
     };
@@ -79,6 +80,14 @@ const Header = () => {
                                     className={`text-warning mt-2 p-2 text-decoration-none ${activeLink === 'about' ? 'text-white' : ''}`}
                                 >
                                     About
+                                </Nav.Link>
+                                <Nav.Link
+                                    as={Link}
+                                    to="/courses"
+                                    onClick={() => handleNavLinkClick('courses')}
+                                    className={`text-warning mt-2 p-2 text-decoration-none ${activeLink === 'courses' ? 'text-white' : ''}`}
+                                >
+                                    Courses
                                 </Nav.Link>
                                 <Nav.Link
                                     as={Link}
