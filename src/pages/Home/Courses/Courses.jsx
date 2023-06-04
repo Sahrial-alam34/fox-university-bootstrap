@@ -13,7 +13,7 @@ const Courses = () => {
                     <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a <br /> paradisematic country</p>
                 </div>
 
-                <div className="row mt-5 ms-3">
+                <div className="row mt-5 ms-lg:3">
                     {
                         courseDetails.slice(0,4).map(course =>
                             <SingleCourse

@@ -16,7 +16,7 @@ const SingleStaff = ({ singleStaff }) => {
         setIsHovered(false);
     };
     return (
-        <div className="col-6 col-md-3">
+        <div className="col-12 col-md-3">
             <Card className='border-0 ' border rounded-0>
                 <Card.Img cla variant="top" style={{ height: '250px', opacity: isHovered ? 0.5 : 1 }} src={picture} onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}

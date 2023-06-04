@@ -7,13 +7,13 @@ const Cover = () => {
     return (
         <div>
             <Card className="bg-dark text-white fixed">
-                <Card.Img style={{ height: '800px' }} className="custom-opacity " src={img1} alt="Card image" />
+                <Card.Img style={{ height: '800px' }} className="custom-opacity img-fluid" src={img1} alt="Card image" />
                 <Card.ImgOverlay className=" m-5">
-                    <div className="d-flex">
-                        <div>
-                            <img src={img2} alt="" />
+                    <div className="d-lg-flex">
+                        <div className="w-50">
+                            <img className="img-fluid" src={img2} alt="" />
                         </div>
-                        <div className="m-5">
+                        <div className="m-5 w-50">
                            <h1 className="mb-5">Fox University</h1>
                             <Card.Text>
                                 Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
@@ -22,7 +22,7 @@ const Cover = () => {
                             </Card.Text>
                         </div>
                     </div>
-                    <div className="d-flex container m-5 justify-content-between">
+                    <div className="d-lg-flex container m-5 justify-content-between">
                         <div>
                             <h1>18</h1>
                             <p>Certified Teachers</p>

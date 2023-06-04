@@ -11,7 +11,7 @@ const SingleCourse = ({ course }) => {
     const buttonStyle = isHovered ? 'border border-warning text-warning' : 'warning text-white';
     const { picture, name, seats, years, title, description } = course
     return (
-        <div className="col-6 col-md-3">
+        <div className="col-12 col-md-3">
             <Card className='border-0 ' style={{ width: '25rem' }}>
                 <Card.Img variant="top" style={{ height: '250px' }} src={picture}
                 />

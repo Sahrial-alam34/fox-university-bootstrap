@@ -67,7 +67,7 @@ const Offer = () => {
                 </div>
             </div>
             <div className='col-md-4'>
-                <img src={img2} alt="" />
+                <img className='img-fluid'  src={img2} alt="" />
             </div>
         </div>
     </div>

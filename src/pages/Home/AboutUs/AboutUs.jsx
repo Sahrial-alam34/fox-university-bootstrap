@@ -20,8 +20,8 @@ const AboutUs = () => {
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide className="d-flex justify-content-center align-items-center">
-                    <div className=" d-flex gap-5 m-5">
+                <SwiperSlide className="d-lg-flex justify-content-center align-items-center">
+                    <div className=" d-lg-flex gap-5 m-5">
                    
                             <img className="rounded-circle" style={{ width: '150px' }} src={img1} alt="" />
                   
@@ -34,8 +34,8 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className="d-flex justify-content-center align-items-center">
-                    <div className=" d-flex gap-5 m-5">
+                <SwiperSlide className="md:d-flex justify-content-center align-items-center">
+                    <div className=" md:d-flex gap-5 m-5">
                    
                             <img className="rounded-circle" style={{ width: '150px' }} src={img1} alt="" />
                   
@@ -48,8 +48,8 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className="d-flex justify-content-center align-items-center">
-                    <div className=" d-flex gap-5 m-5">
+                <SwiperSlide className="md:d-flex justify-content-center align-items-center">
+                    <div className=" md:d-flex gap-5 m-5">
                    
                             <img className="rounded-circle" style={{ width: '150px' }} src={img1} alt="" />
                   

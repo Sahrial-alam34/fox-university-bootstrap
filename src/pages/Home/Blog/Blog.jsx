@@ -16,7 +16,7 @@ const Blog = () => {
                 <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary <br />  regelialia. It is a paradisematic country</p>
             </div>
             <div className="row  justify-content-between mb-5">
-                <div className="row mt-5 ms-5">
+                <div className="row mt-5 ms-lg-5">
                     {
                         blogs.slice(0,3).map(blog =>
                             <SingleBlog key={blog.id} blog={blog}></SingleBlog>

@@ -130,7 +130,7 @@ const Header = () => {
                                 >
 
                                 </Form.Control>
-                                <div className='bg-white' style={{ position: 'absolute', right: 25, top: 20, width: '35px' }}>
+                                <div className='md:bg-white' style={{ position: 'absolute', right: 25, top: 20, width: '35px' }}>
                                     <MdSearch ></MdSearch>
                                 </div>
 

@@ -14,13 +14,13 @@ const Quote = () => {
     return (
         <div>
             <Card className="bg-dark text-white fixed">
-                <Card.Img style={{ height: '800px' }} className="custom-opacity " src={img1} alt="Card image" />
+                <Card.Img md:style={{ height: '800px' }} className="custom-opacity w-full" src={img1} alt="Card image" />
                 <Card.ImgOverlay className=" m-5  ">
-                    <div className="d-flex "  >
-                        <div>
-                            <img src={img2} alt="" />
+                    <div className="d-lg-flex "  >
+                        <div className="w-50 p-5"> 
+                            <img className="img-fluid" src={img2} alt="" />
                         </div>
-                        <div className="m-5" >
+                        <div className="m-5 w-50" >
                             <div className="mb-5 ">
                                 <h1 className='mb-5 mt-5'>Request A Quote</h1>
                                 <p>Far far away, behind the word mountains, far from the <br /> countries Vokalia and Consonantia, <br /> there live the blind texts.</p>

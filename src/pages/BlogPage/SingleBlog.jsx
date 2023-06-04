@@ -12,7 +12,7 @@ const SingleBlog = ({ blog }) => {
     const buttonStyle = isHovered ? 'border border-warning text-warning' : 'warning text-white';
     const { picture, date, title, description, type, message } = blog
     return (
-        <div className='col-6 col-md-4'>
+        <div className='col-12 col-md-4'>
 
             <Card className='border-0 ' style={{ width: '25rem' }}>
                 <Card.Img className="position-relative" variant="top" style={{ height: '250px' }} src={picture}

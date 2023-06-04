@@ -18,7 +18,7 @@ const StaffPage = () => {
                 <title>Fox | Staff</title>
             </Helmet>
             <CoverPage title="Staff Page" link="staff"></CoverPage>
-            <div className="row mt-5 ms-3">
+            <div className="row mt-5 ms-lg-3">
                 {
                     staff.map(singleStaff =>
                       <SingleStaff key={singleStaff.id} singleStaff={singleStaff}></SingleStaff>

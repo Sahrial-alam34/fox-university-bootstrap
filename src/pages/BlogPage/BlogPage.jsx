@@ -16,7 +16,7 @@ const BlogPage = () => {
                 <title>Fox | Blogs</title>
             </Helmet>
             <CoverPage title="Blogs Page" link="blog"></CoverPage>
-            <div className="row mt-5 ms-5">
+            <div className="row mt-5 ms-lg-5">
                 {
                     blogs.map(blog =>
                         <SingleBlog key={blog.id} blog={blog}></SingleBlog>
