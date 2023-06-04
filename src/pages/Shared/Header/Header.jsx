@@ -7,13 +7,21 @@ import Navbar from 'react-bootstrap/Navbar';
 import { MdCall, MdSearch } from 'react-icons/md';
 import { SiMinutemailer } from "react-icons/si";
 import { NavLink } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 const Header = () => {
     const [isHovered, setIsHovered] = useState(false);
+    const [activeLink, setActiveLink] = useState('');
     const handleHover = () => {
         setIsHovered(!isHovered);
     };
+    const handleNavLinkClick = (link) => {
+        setActiveLink(link);
+    };
     const buttonStyle = isHovered ? 'border border-warning text-warning' : 'warning text-white';
+
+
+
+
     return (
         <div className='container'>
             <Navbar expand="lg">
@@ -54,17 +62,36 @@ const Header = () => {
 
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-between'>
-                        <div>
+                        <>
                             <Nav className="">
-                                <NavLink to='/' activeclassname="active" className='text-white mt-2 p-2 text-decoration-none nav-link'>Home</NavLink>
-                                <NavLink to='/blog' activeclassname="active" className='text-white mt-2 p-2 text-decoration-none nav-link' >Blog</NavLink>
-                                <NavLink to='/blog' activeclassname="active" className='text-white mt-2 p-2 text-decoration-none nav-link' >Blog</NavLink>
-                                <NavLink to='/blog' activeclassname="active" className='text-white mt-2 p-2 text-decoration-none nav-link' >Blog</NavLink>
-                                <NavLink to='/blog' activeclassname="active" className='text-white mt-2 p-2 text-decoration-none nav-link' >Blog</NavLink>
-                                <NavLink to='/blog' activeclassname="active" className='text-white mt-2 p-2 text-decoration-none nav-link' >Blog</NavLink>
+                                <Nav.Link
+                                    as={Link}
+                                    to="/"
+                                    onClick={() => handleNavLinkClick('home')}
+                                    className={`text-warning mt-2 p-2 text-decoration-none ${activeLink === 'home' ? 'text-white' : ''}`}
+                                >
+                                    Home
+                                </Nav.Link>
+                                <Nav.Link
+                                    as={Link}
+                                    to="/about"
+                                    onClick={() => handleNavLinkClick('about')}
+                                    className={`text-warning mt-2 p-2 text-decoration-none ${activeLink === 'about' ? 'text-white' : ''}`}
+                                >
+                                    Blog
+                                </Nav.Link>
+                                <Nav.Link
+                                    as={Link}
+                                    to="/contact"
+                                    onClick={() => handleNavLinkClick('contact')}
+                                    className={`text-warning mt-2 p-2 text-decoration-none ${activeLink === 'contact' ? 'text-white' : ''}`}
+                                >
+                                    Contact
+                                </Nav.Link>
+                           
 
                             </Nav>
-                        </div>
+                        </>
                         <Form className="d-flex">
                             <div className='d-flex '>
                                 <Form.Control
@@ -72,13 +99,13 @@ const Header = () => {
                                     placeholder="Search"
                                     className="me-2 "
                                     aria-label="Search"
-                                    
-                                    
+
+
 
                                 >
 
                                 </Form.Control>
-                                <div className='bg-white' style={{ position: 'absolute', right: 25, top: 20, width:'35px' }}>
+                                <div className='bg-white' style={{ position: 'absolute', right: 25, top: 20, width: '35px' }}>
                                     <MdSearch ></MdSearch>
                                 </div>
 
