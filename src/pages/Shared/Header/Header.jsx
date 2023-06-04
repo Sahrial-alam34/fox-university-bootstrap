@@ -66,12 +66,14 @@ const Header = () => {
                             </Nav>
                         </div>
                         <Form className="d-flex">
-                            <div className='d-flex'>
+                            <div className='d-flex '>
                                 <Form.Control
                                     type="search"
                                     placeholder="Search"
-                                    className="me-2"
+                                    className="me-2 "
                                     aria-label="Search"
+                                    
+                                    
 
                                 >
 

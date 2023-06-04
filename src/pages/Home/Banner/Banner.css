@@ -1,0 +1,35 @@
+.absolute {
+    position: absolute;
+  }
+  
+.relative {
+    position: re;
+  }
+  
+  .rounded-xl {
+    border-radius: 0.75rem;
+  }
+  
+  .h-full {
+    height: 100%;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .left-0 {
+    left: 0;
+  }
+  
+  .top-0 {
+    top: 0;
+  }
+  
+  .bg-gradient-to-r {
+    background: linear-gradient(to right, #151515, rgba(21, 21, 21, 0));
+  }
